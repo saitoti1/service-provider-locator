@@ -180,6 +180,7 @@ class GeoJsonPointSerializer(serializers.Serializer):
     longitude = serializers.FloatField()
     point = serializers.SerializerMethodField()
 
+    # noinspection PyMethodMayBeStatic
     def get_point(self, attrs):
         try:
             return point.Point(attrs['longitude'], attrs['latitude'])

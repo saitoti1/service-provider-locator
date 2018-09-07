@@ -1,7 +1,8 @@
-from django.test import TestCase, Client
+from django.test import TestCase
 from rest_framework import status
 from rest_framework.exceptions import ErrorDetail
 from service_area.test_constants import *
+
 
 class TestCaseWithFixtures(TestCase):
     """Intial fixtures loading"""
@@ -40,6 +41,18 @@ class Login(TestCaseWithFixtures):
         r = self.client.put('/api/company/', LOGIN_COMPANY_OBJECT_FAILURE, content_type='application/json')
         self.assertFalse(r.data["success"])
         self.assertEqual(r.status_code, status.HTTP_401_UNAUTHORIZED)
+
+
+class GetCompany(TestCase):
+    """
+    This test is to get all companies
+    """
+
+    def test_success(self):
+        """Test Success"""
+        r = self.client.get('/api/company/')
+        self.assertTrue(r.data["success"])
+        self.assertEqual(r.status_code, status.HTTP_200_OK)
 
 
 class GetCompany(TestCaseWithFixtures):
@@ -230,8 +243,7 @@ class GetAllServiceArea(TestCaseWithFixtures):
                             content_type='application/json')
         token = r.data['data']['access_token']
         header = {'HTTP_AUTHORIZATION': 'Bearer {token}'.format(token=token)}
-        r = self.client.get('/api/service-area/',
-                             content_type='application/json', **header)
+        r = self.client.get('/api/service-area/', content_type='application/json', **header)
         self.assertTrue(r.data["success"])
         self.assertEqual(r.status_code, status.HTTP_200_OK)
 

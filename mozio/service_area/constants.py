@@ -48,7 +48,7 @@ CURRENCY_CHOICE = (
     ('JPY', _('JAPANESE YEN')),
     ('GBP', _('GREAT BRITAIN POUND')),
     ('AUD', _('AUSTRALIAN DOLLARS')),
-    ('CAD', _('CANADIAN DOLLARDS')),
+    ('CAD', _('CANADIAN DOLLARS')),
     ('CHF', _('SWISS FRANC')),
     ('CNY', _('CHINESE YUAN')),
     ('INR', _('INDIAN RUPEE')),

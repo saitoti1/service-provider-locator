@@ -8,7 +8,7 @@ class CompanySRUD(APIView):
     """
     This APIVIew has single retrieve, update and delete methods
     """
-    permission_classes = (permissions.CompanyAccessPermission, )
+    permission_classes = (permissions.CompanyAccessPermission,)
 
     # noinspection PyMethodMayBeStatic
     def get(self, request):
@@ -55,7 +55,7 @@ class CompanyCMRL(APIView):
     This APIView has search, create and multiple instance retrive methods
     """
 
-    # noinspection PyMethodMayBeStatic
+    # noinspection PyMethodMayBeStatic,PyUnusedLocal
     def get(self, request):
         """
         description: This API is used to retieve multiple company instances
@@ -99,7 +99,7 @@ class ServiceAreaCMR(APIView):
     """
     This APIView has create and multiple instance retrive methods
     """
-    permission_classes = (permissions.CompanyAccessPermission, )
+    permission_classes = (permissions.CompanyAccessPermission,)
 
     # noinspection PyMethodMayBeStatic
     def post(self, request):
@@ -163,10 +163,12 @@ class ServiceAreaSRUD(APIView):
         (response, status_code) = utils.delete_serializer(service_area_id, request.user)
         return Response(response, status=status_code)
 
+
 class SearchServiceArea(APIView):
     """
     This APIView is used to search a point in active service areas
     """
+
     # noinspection PyMethodMayBeStatic
     def put(self, request):
         """

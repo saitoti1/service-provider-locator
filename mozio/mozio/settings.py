@@ -178,3 +178,5 @@ CACHES = {
 
 
 STATIC_URL = '/static/'
+# noinspection PyUnresolvedReferences
+STATIC_ROOT = os.path.join(BASE_DIR, 'static') + "/"

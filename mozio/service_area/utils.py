@@ -287,7 +287,10 @@ def search_serializers(data):
     response_data = {}
     if serializer_obj.is_valid():
         point = serializer_obj.data["point"]
-        response_data = CacheService.get(json.dumps(mapping(point)))
+        try:
+            response_data = CacheService.get(json.dumps(mapping(point)))
+        except CacheError:
+            pass
         if not response_data:
             for service_area in service_areas:
                 polygon = shape(service_area.geo_json)
@@ -301,13 +304,13 @@ def search_serializers(data):
                     response_data)
             except CacheError:
                 pass
+        response["data"] = response_data
     else:
         status_code = status.HTTP_400_BAD_REQUEST
         response["data"] = serializer_obj.errors
         response["message"] = "Search for service area failed"
         response["success"] = False
         return response, status_code
-    response["data"] = response_data
     response["message"] = "Search for service area successful"
     response["success"] = True
     return response, status_code

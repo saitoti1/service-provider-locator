@@ -40,7 +40,7 @@ class Migration(migrations.Migration):
                 ('email', models.EmailField(max_length=254)),
                 ('phone_number', models.CharField(max_length=12)),
                 ('language', models.CharField(choices=[('man', 'mandarin'), ('spa', 'spanish'), ('eng', 'english'), ('hin', 'hindi'), ('ara', 'arabic'), ('por', 'portuguese'), ('ben', 'bengali'), ('rus', 'russian'), ('jap', 'japanese'), ('pun', 'punjabi')], max_length=5)),
-                ('currency', models.CharField(choices=[('USD', 'U.S.DOLLARS'), ('EUR', 'EUROS'), ('JPY', 'JAPANESE YEN'), ('GBP', 'GREAT BRITAIN POUND'), ('AUD', 'AUSTRALIAN DOLLARS'), ('CAD', 'CANADIAN DOLLARDS'), ('CHF', 'SWISS FRANC'), ('CNY', 'CHINESE YUAN'), ('INR', 'INDIAN RUPEE')], max_length=3)),
+                ('currency', models.CharField(choices=[('USD', 'U.S.DOLLARS'), ('EUR', 'EUROS'), ('JPY', 'JAPANESE YEN'), ('GBP', 'GREAT BRITAIN POUND'), ('AUD', 'AUSTRALIAN DOLLARS'), ('CAD', 'CANADIAN DOLLARS'), ('CHF', 'SWISS FRANC'), ('CNY', 'CHINESE YUAN'), ('INR', 'INDIAN RUPEE')], max_length=3)),
                 ('password', models.CharField(max_length=255)),
             ],
             options={
