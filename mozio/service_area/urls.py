@@ -13,11 +13,14 @@ Including another URLconf
     1. Import the include() function: from django.urls import include, path
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
-from django.contrib import admin
-from django.urls import path, include
-
+from django.urls import path
+from service_area.views import CompanySRUD, CompanyCMRL, ServiceAreaCMR, ServiceAreaSRUD, SearchServiceArea
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('api/', include('service_area.urls')),
+    path('company/', CompanyCMRL.as_view(), name='company-create-multipleRetrive-login'),
+    path('my-company/', CompanySRUD.as_view(), name='company-singleRetrive-update-delete'),
+    path('service-area/', ServiceAreaCMR.as_view(), name='service-area-create-multipleRetrive-search'),
+    path('my-service-area/<uuid:service_area_id>/',
+         ServiceAreaSRUD.as_view(), name='service-area-singleRetrive-update-delete'),
+    path('search/', SearchServiceArea.as_view(), name='search-service-area')
 ]

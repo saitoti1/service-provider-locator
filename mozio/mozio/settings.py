@@ -25,7 +25,7 @@ SECRET_KEY = '&22tw)!c!gjo8m)%%&*uc5pt5snq52t+7%x)#e!el8ah__nby3'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -37,6 +37,11 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    # Third Part Apps
+    'rest_framework',
+    'rest_framework_swagger',
+    # Apps
+    'service_area',
 ]
 
 MIDDLEWARE = [
@@ -75,8 +80,12 @@ WSGI_APPLICATION = 'mozio.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'mozio',
+        'USER': 'temp',
+        'PASSWORD': 'temp',
+        'HOST': 'localhost',
+        'PORT': '5432',
     }
 }
 
@@ -114,7 +123,59 @@ USE_L10N = True
 USE_TZ = True
 
 
+# # Swagger settings
+# SWAGGER_SETTINGS = {
+#     'DOC_EXPANSION': 'list',
+#     'APIS_SORTER': 'alpha',
+#     'SECURITY_DEFINITIONS': {
+#         'basic': {
+#             'type': 'apiKey',
+#             'name': 'AUTHORIZATION',
+#             'in': 'header'
+#         },
+#     }
+# }
+
+# # Swagger settings
+SWAGGER_SETTINGS = {
+    'USE_SESSION_AUTH': False,
+    'api_version': '0.1',
+    'enabled_methods': [
+        'get',
+        'post',
+        'delete',
+        'put',
+        'options',
+    ],
+    'SECURITY_DEFINITIONS': {
+        "api_key": {
+            "type": "apiKey",
+            "name": "Authorization",
+            "in": "header"
+          },
+    },
+}
 # Static files (CSS, JavaScript, Images)
-# https://docs.djangoproject.com/en/2.1/howto/static-files/
+# https://docs.djangoproject.com/en/1.10/howto/static-files/
+
+# cache config settings
+MAX_CACHE_EXPIRE_TIME = 3600                # 1 hour
+SINGLE_DAY_CACHE_TIMEOUT = 60 * 60 * 24     # 1 days
+CACHE_BACKEND = 'django_redis.cache.RedisCache'
+CACHE_LOCATION = 'redis://127.0.0.1:6379/1'
+CACHE_KEY_PREFIX = 'mozio'
+
+# Cache settings
+CACHES = {
+    'default': {
+        'BACKEND': CACHE_BACKEND,
+        'LOCATION': CACHE_LOCATION,
+        'OPTIONS': {
+            "CLIENT_CLASS": "django_redis.client.DefaultClient"
+        },
+        'KEY_PREFIX': CACHE_KEY_PREFIX
+    },
+}
+
 
 STATIC_URL = '/static/'
