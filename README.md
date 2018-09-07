@@ -25,11 +25,19 @@ And of course MozioProject itself is open source with a [public repository][dill
 MozioProject requires Python3.6 or above to run.
 ```
 Clone the repo
-virtualenv -p python3 venv      # Create virtualenv
-source venv/bin/activate        # Activate virtualenv
-pip install -r requirements.txt # Install python modules
+$ virtualenv -p python3 venv      # Create virtualenv
+$ source venv/bin/activate        # Activate virtualenv
+$ pip install -r requirements.txt # Install python modules
+Edit database settings in mozio/settings.py
+$ python manage.py migrate
 ```
 
+### Run Server
+```
+Start Redis
+Activate virtualenv
+$ python manage.py runserver [IP]:[PORT]
+```
 ### Postman Collection Link
 
 Here is a link to postman collection: [Postman]
