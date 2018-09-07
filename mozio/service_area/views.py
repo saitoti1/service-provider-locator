@@ -56,7 +56,7 @@ class CompanyCMRL(APIView):
     """
 
     # noinspection PyMethodMayBeStatic
-    def get(self):
+    def get(self, request):
         """
         description: This API is used to retieve multiple company instances
         """
