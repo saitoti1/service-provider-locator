@@ -39,7 +39,6 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     # Third Part Apps
     'rest_framework',
-    'rest_framework_swagger',
     # Apps
     'service_area',
 ]
