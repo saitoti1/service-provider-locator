@@ -14,6 +14,9 @@ lib64
 node_modules
 __pycache__
 
+# Static
+static/
+
 # Virtual Environment
 venv/
 
