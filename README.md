@@ -1,4 +1,4 @@
-# MozioProject
+# Service Provider Locator
 
 The project contains supervisor config file and gunicorn bash which were used to host the application.
 
@@ -22,7 +22,7 @@ And of course MozioProject itself is open source with a [public repository][dill
 
 ### Installation
 
-MozioProject requires Python3.6 or above to run.
+Service Provider Locator requires Python3.6 or above to run.
 ```
 Clone the repo
 $ virtualenv -p python3 venv      # Create virtualenv
