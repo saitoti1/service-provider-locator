@@ -10,7 +10,7 @@ class TestCaseWithFixtures(TestCase):
 
 
 class CreateCompany(TestCase):
-    """This test is for create company API"""
+    """This test is for create company API's"""
 
     def test_success(self):
         """Test Success"""
