@@ -1,1 +1,191 @@
-[{"model": "contenttypes.contenttype", "pk": 1, "fields": {"app_label": "admin", "model": "logentry"}}, {"model": "contenttypes.contenttype", "pk": 2, "fields": {"app_label": "auth", "model": "permission"}}, {"model": "contenttypes.contenttype", "pk": 3, "fields": {"app_label": "auth", "model": "group"}}, {"model": "contenttypes.contenttype", "pk": 4, "fields": {"app_label": "auth", "model": "user"}}, {"model": "contenttypes.contenttype", "pk": 5, "fields": {"app_label": "contenttypes", "model": "contenttype"}}, {"model": "contenttypes.contenttype", "pk": 6, "fields": {"app_label": "sessions", "model": "session"}}, {"model": "contenttypes.contenttype", "pk": 7, "fields": {"app_label": "service_area", "model": "accesstoken"}}, {"model": "contenttypes.contenttype", "pk": 8, "fields": {"app_label": "service_area", "model": "company"}}, {"model": "contenttypes.contenttype", "pk": 9, "fields": {"app_label": "service_area", "model": "servicearea"}}, {"model": "service_area.company", "pk": "b0356f29-6b69-469b-9afb-50ec9903ebc4", "fields": {"is_deleted": false, "created_at": "2018-09-06T06:50:49.502Z", "modified_at": "2018-09-06T06:50:49.502Z", "name": "Lazy Panda", "email": "panda@mozio.com", "phone_number": "9876543210", "language": "eng", "currency": "USD", "password": "$pbkdf2-sha256$30000$/p9TKuV8z1nrXeudc45Ryg$u6Y5GBDwyS6lexHbBkJF5xcalEsgmNoa.BhOu9hDJ2A"}}, {"model": "service_area.company", "pk": "ed9a655d-585e-4831-b30a-f851fc25d9da", "fields": {"is_deleted": false, "created_at": "2018-09-06T10:47:01.620Z", "modified_at": "2018-09-06T10:47:01.620Z", "name": "Lazy Panda 3108", "email": "lazy@mozio.com", "phone_number": "9876543210", "language": "eng", "currency": "USD", "password": "$pbkdf2-sha256$30000$yfl/r/We855zbg0hhNC6dw$irvFy3onFoJogRpJOu4eaI4Pd/wC/qL0qW3s1/LIqUk"}}, {"model": "service_area.servicearea", "pk": "05eb43e5-fee8-4e81-a5c1-4aefd7691f82", "fields": {"is_deleted": false, "created_at": "2018-09-06T11:04:07.170Z", "modified_at": "2018-09-06T11:04:07.170Z", "name": "Service Area 1", "price": 3108.96, "geo_json": {"type": "Polygon", "coordinates": [[[74.08905029296875, 21.25354187363282], [74.28680419921875, 20.838277806058933], [74.73724365234375, 20.958874775031518], [74.45709228515625, 21.424946712203003], [74.08905029296875, 21.25354187363282]]]}, "company": "ed9a655d-585e-4831-b30a-f851fc25d9da"}}, {"model": "service_area.servicearea", "pk": "efcb0080-1ce9-47a0-8299-15c126b84dd4", "fields": {"is_deleted": false, "created_at": "2018-09-06T06:51:24.362Z", "modified_at": "2018-09-06T07:17:36.494Z", "name": "Service Area 1", "price": 3108.96, "geo_json": {"type": "Polygon", "coordinates": [[[73.47656249999999, 21.790107059807873], [73.45458984375, 20.889607510404367], [74.080810546875, 21.626792634799433], [74.4873046875, 20.73556590521864], [74.87182617187499, 21.49396356306447], [75.311279296875, 20.684183779352395], [73.47656249999999, 21.790107059807873]]]}, "company": "b0356f29-6b69-469b-9afb-50ec9903ebc4"}}, {"model": "service_area.accesstoken", "pk": 1, "fields": {"is_deleted": false, "created_at": "2018-09-06T06:50:54.935Z", "modified_at": "2018-09-06T06:50:54.935Z", "token": "9f436b8f-d434-4572-ad5f-02cf137b63c8", "company": "b0356f29-6b69-469b-9afb-50ec9903ebc4", "expiry": "2018-09-06T07:50:54.933Z"}}, {"model": "service_area.accesstoken", "pk": 2, "fields": {"is_deleted": false, "created_at": "2018-09-06T07:52:06.241Z", "modified_at": "2018-09-06T07:52:06.242Z", "token": "53fda6b2-9b67-44ed-a3f8-380c4ce1c7b5", "company": "b0356f29-6b69-469b-9afb-50ec9903ebc4", "expiry": "2018-09-06T08:52:06.239Z"}}, {"model": "service_area.accesstoken", "pk": 3, "fields": {"is_deleted": false, "created_at": "2018-09-06T09:28:55.825Z", "modified_at": "2018-09-06T09:28:55.826Z", "token": "a26e835e-a5cf-4e2b-ad0c-f0d684ba1af4", "company": "b0356f29-6b69-469b-9afb-50ec9903ebc4", "expiry": "2018-09-06T09:33:55.824Z"}}, {"model": "service_area.accesstoken", "pk": 4, "fields": {"is_deleted": false, "created_at": "2018-09-06T09:32:00.358Z", "modified_at": "2018-09-06T09:32:00.359Z", "token": "59b8c227-4932-4ad1-b0b9-a0b700fac691", "company": "b0356f29-6b69-469b-9afb-50ec9903ebc4", "expiry": "2018-09-06T09:37:00.356Z"}}, {"model": "service_area.accesstoken", "pk": 5, "fields": {"is_deleted": false, "created_at": "2018-09-06T09:42:51.661Z", "modified_at": "2018-09-06T09:42:51.661Z", "token": "59dadd47-8288-4bbb-b58d-95d54d153b0b", "company": "b0356f29-6b69-469b-9afb-50ec9903ebc4", "expiry": "2018-09-06T09:47:51.659Z"}}, {"model": "service_area.accesstoken", "pk": 6, "fields": {"is_deleted": false, "created_at": "2018-09-06T10:30:35.383Z", "modified_at": "2018-09-06T10:30:35.383Z", "token": "28844bdd-5c05-4c09-b074-6ec154ccc8b8", "company": "b0356f29-6b69-469b-9afb-50ec9903ebc4", "expiry": "2018-09-06T10:35:35.381Z"}}, {"model": "service_area.accesstoken", "pk": 7, "fields": {"is_deleted": false, "created_at": "2018-09-06T10:47:13.698Z", "modified_at": "2018-09-06T10:47:13.698Z", "token": "7f65e450-9634-4553-85e3-bf880a4f4322", "company": "ed9a655d-585e-4831-b30a-f851fc25d9da", "expiry": "2018-09-06T10:52:13.696Z"}}, {"model": "service_area.accesstoken", "pk": 8, "fields": {"is_deleted": false, "created_at": "2018-09-06T10:53:36.259Z", "modified_at": "2018-09-06T10:53:36.259Z", "token": "db3d984f-111b-4998-95b7-230f2d479c67", "company": "ed9a655d-585e-4831-b30a-f851fc25d9da", "expiry": "2018-09-06T10:58:36.257Z"}}, {"model": "service_area.accesstoken", "pk": 9, "fields": {"is_deleted": false, "created_at": "2018-09-06T10:58:49.901Z", "modified_at": "2018-09-06T10:58:49.901Z", "token": "5a1c0304-976f-4e58-adca-c3a692de2fdb", "company": "ed9a655d-585e-4831-b30a-f851fc25d9da", "expiry": "2018-09-06T11:03:49.899Z"}}, {"model": "service_area.accesstoken", "pk": 10, "fields": {"is_deleted": false, "created_at": "2018-09-06T10:58:50.817Z", "modified_at": "2018-09-06T11:03:11.177Z", "token": "6d9026c1-1141-4ae7-91de-dcc17421cbf2", "company": "ed9a655d-585e-4831-b30a-f851fc25d9da", "expiry": "2018-09-06T11:13:50.816Z"}}, {"model": "auth.permission", "pk": 1, "fields": {"name": "Can add log entry", "content_type": 1, "codename": "add_logentry"}}, {"model": "auth.permission", "pk": 2, "fields": {"name": "Can change log entry", "content_type": 1, "codename": "change_logentry"}}, {"model": "auth.permission", "pk": 3, "fields": {"name": "Can delete log entry", "content_type": 1, "codename": "delete_logentry"}}, {"model": "auth.permission", "pk": 4, "fields": {"name": "Can view log entry", "content_type": 1, "codename": "view_logentry"}}, {"model": "auth.permission", "pk": 5, "fields": {"name": "Can add permission", "content_type": 2, "codename": "add_permission"}}, {"model": "auth.permission", "pk": 6, "fields": {"name": "Can change permission", "content_type": 2, "codename": "change_permission"}}, {"model": "auth.permission", "pk": 7, "fields": {"name": "Can delete permission", "content_type": 2, "codename": "delete_permission"}}, {"model": "auth.permission", "pk": 8, "fields": {"name": "Can view permission", "content_type": 2, "codename": "view_permission"}}, {"model": "auth.permission", "pk": 9, "fields": {"name": "Can add group", "content_type": 3, "codename": "add_group"}}, {"model": "auth.permission", "pk": 10, "fields": {"name": "Can change group", "content_type": 3, "codename": "change_group"}}, {"model": "auth.permission", "pk": 11, "fields": {"name": "Can delete group", "content_type": 3, "codename": "delete_group"}}, {"model": "auth.permission", "pk": 12, "fields": {"name": "Can view group", "content_type": 3, "codename": "view_group"}}, {"model": "auth.permission", "pk": 13, "fields": {"name": "Can add user", "content_type": 4, "codename": "add_user"}}, {"model": "auth.permission", "pk": 14, "fields": {"name": "Can change user", "content_type": 4, "codename": "change_user"}}, {"model": "auth.permission", "pk": 15, "fields": {"name": "Can delete user", "content_type": 4, "codename": "delete_user"}}, {"model": "auth.permission", "pk": 16, "fields": {"name": "Can view user", "content_type": 4, "codename": "view_user"}}, {"model": "auth.permission", "pk": 17, "fields": {"name": "Can add content type", "content_type": 5, "codename": "add_contenttype"}}, {"model": "auth.permission", "pk": 18, "fields": {"name": "Can change content type", "content_type": 5, "codename": "change_contenttype"}}, {"model": "auth.permission", "pk": 19, "fields": {"name": "Can delete content type", "content_type": 5, "codename": "delete_contenttype"}}, {"model": "auth.permission", "pk": 20, "fields": {"name": "Can view content type", "content_type": 5, "codename": "view_contenttype"}}, {"model": "auth.permission", "pk": 21, "fields": {"name": "Can add session", "content_type": 6, "codename": "add_session"}}, {"model": "auth.permission", "pk": 22, "fields": {"name": "Can change session", "content_type": 6, "codename": "change_session"}}, {"model": "auth.permission", "pk": 23, "fields": {"name": "Can delete session", "content_type": 6, "codename": "delete_session"}}, {"model": "auth.permission", "pk": 24, "fields": {"name": "Can view session", "content_type": 6, "codename": "view_session"}}, {"model": "auth.permission", "pk": 25, "fields": {"name": "Can add access token", "content_type": 7, "codename": "add_accesstoken"}}, {"model": "auth.permission", "pk": 26, "fields": {"name": "Can change access token", "content_type": 7, "codename": "change_accesstoken"}}, {"model": "auth.permission", "pk": 27, "fields": {"name": "Can delete access token", "content_type": 7, "codename": "delete_accesstoken"}}, {"model": "auth.permission", "pk": 28, "fields": {"name": "Can view access token", "content_type": 7, "codename": "view_accesstoken"}}, {"model": "auth.permission", "pk": 29, "fields": {"name": "Can add company", "content_type": 8, "codename": "add_company"}}, {"model": "auth.permission", "pk": 30, "fields": {"name": "Can change company", "content_type": 8, "codename": "change_company"}}, {"model": "auth.permission", "pk": 31, "fields": {"name": "Can delete company", "content_type": 8, "codename": "delete_company"}}, {"model": "auth.permission", "pk": 32, "fields": {"name": "Can view company", "content_type": 8, "codename": "view_company"}}, {"model": "auth.permission", "pk": 33, "fields": {"name": "Can add service area", "content_type": 9, "codename": "add_servicearea"}}, {"model": "auth.permission", "pk": 34, "fields": {"name": "Can change service area", "content_type": 9, "codename": "change_servicearea"}}, {"model": "auth.permission", "pk": 35, "fields": {"name": "Can delete service area", "content_type": 9, "codename": "delete_servicearea"}}, {"model": "auth.permission", "pk": 36, "fields": {"name": "Can view service area", "content_type": 9, "codename": "view_servicearea"}}]
+[{"model": "contenttypes.contenttype", "pk": 1, "fields":
+{"app_label": "admin", "model": "logentry"}},
+  {"model": "contenttypes.contenttype", "pk": 2, "fields":
+  {"app_label": "auth", "model": "permission"}},
+  {"model": "contenttypes.contenttype", "pk": 3, "fields":
+  {"app_label": "auth", "model": "group"}},
+  {"model": "contenttypes.contenttype", "pk": 4, "fields":
+  {"app_label": "auth", "model": "user"}},
+  {"model": "contenttypes.contenttype", "pk": 5,
+    "fields": {"app_label": "contenttypes", "model": "contenttype"}},
+  {"model": "contenttypes.contenttype", "pk": 6, "fields":
+  {"app_label": "sessions", "model": "session"}},
+  {"model": "contenttypes.contenttype", "pk": 7, "fields": {"app_label": "service_area", "model": "accesstoken"}},
+  {"model": "contenttypes.contenttype", "pk": 8, "fields": {"app_label": "service_area", "model": "company"}},
+  {"model": "contenttypes.contenttype", "pk": 9, "fields": {"app_label": "service_area", "model": "servicearea"}},
+  {"model": "service_area.company", "pk": "b0356f29-6b69-469b-9afb-50ec9903ebc4", "fields":
+  {"is_deleted": false, "created_at": "2018-09-06T06:50:49.502Z",
+    "modified_at": "2018-09-06T06:50:49.502Z", "name": "Lazy Panda",
+    "email": "panda@mozio.com", "phone_number": "9876543210",
+    "language": "eng", "currency": "USD",
+    "password": "$pbkdf2-sha256$30000$/p9TKuV8z1nrXeudc45Ryg$u6Y5GBDwyS6lexHbBkJF5xcalEsgmNoa.BhOu9hDJ2A"}},
+  {"model": "service_area.company", "pk":
+"ed9a655d-585e-4831-b30a-f851fc25d9da", "fields":
+{"is_deleted": false, "created_at":
+"2019-08-02T10:47:01.620Z", "modified_at": "2019-08-02T10:47:01.620Z",
+  "name": "Lazy Panda 3108", "email": "saitoti@mozio.com",
+  "phone_number": "9876543210", "language": "eng", "currency": "USD",
+  "password": "$pbkdf2-sha256$30000$yfl/r/We855zbg0hhNC6dw$irvFy3onFoJogRpJOu4eaI4Pd/wC/qL0qW3s1/LIqUk"}},
+  {"model": "service_area.servicearea", "pk": "05eb43e5-fee8-4e81-a5c1-4aefd7691f82", "fields": {"is_deleted":
+  false, "created_at": "2019-08-02T11:04:07.170Z", "modified_at": "2019-08-02T11:04:07.170Z",
+    "name": "Service Area 1", "price": 3108.96, "geo_json":
+    {"type": "Polygon", "coordinates": [[[74.08905029296875, 21.25354187363282],
+      [74.28680419921875, 20.838277806058933],
+      [74.73724365234375, 20.958874775031518],
+      [74.45709228515625, 21.424946712203003],
+      [74.08905029296875, 21.25354187363282]]]},
+    "company": "ed9a655d-585e-4831-b30a-f851fc25d9da"}},
+  {"model": "service_area.servicearea", "pk": "efcb0080-1ce9-47a0-8299-15c126b84dd4", "fields":
+  {"is_deleted": false, "created_at": "2019-09-02T06:51:24.362Z",
+    "modified_at": "2019-08-02T07:17:36.494Z",
+    "name": "Service Area 1", "price": 3108.96,
+    "geo_json": {"type": "Polygon", "coordinates":
+    [[[73.47656249999999, 21.790107059807873],
+      [73.45458984375, 20.889607510404367],
+      [74.080810546875, 21.626792634799433],
+      [74.4873046875, 20.73556590521864],
+      [74.87182617187499, 21.49396356306447],
+      [75.311279296875, 20.684183779352395],
+      [73.47656249999999, 21.790107059807873]]]},
+    "company": "b0356f29-6b69-469b-9afb-50ec9903ebc4"}},
+  {"model": "service_area.accesstoken", "pk": 1,
+    "fields": {"is_deleted": false, "created_at": "2019-08-02T06:50:54.935Z",
+      "modified_at": "2018-09-06T06:50:54.935Z",
+      "token": "9f436b8f-d434-4572-ad5f-02cf137b63c8",
+      "company": "b0356f29-6b69-469b-9afb-50ec9903ebc4",
+      "expiry": "2018-09-06T07:50:54.933Z"}},
+  {"model": "service_area.accesstoken", "pk": 2,
+    "fields": {"is_deleted": false, "created_at": "2019-08-02T07:52:06.241Z",
+      "modified_at": "2018-09-06T07:52:06.242Z",
+      "token": "53fda6b2-9b67-44ed-a3f8-380c4ce1c7b5",
+      "company": "b0356f29-6b69-469b-9afb-50ec9903ebc4",
+      "expiry": "2018-09-06T08:52:06.239Z"}},
+  {"model": "service_area.accesstoken", "pk": 3,
+    "fields": {"is_deleted": false, "created_at": "2019-09-06T09:28:55.825Z",
+      "modified_at": "2018-09-06T09:28:55.826Z", "token":
+      "a26e835e-a5cf-4e2b-ad0c-f0d684ba1af4", "company":
+      "b0356f29-6b69-469b-9afb-50ec9903ebc4", "expiry": "2019-08-02T09:33:55.824Z"}},
+  {"model": "service_area.accesstoken", "pk": 4, "fields":
+  {"is_deleted": false, "created_at": "2019-08-02T09:32:00.358Z",
+    "modified_at": "2019-08-02T09:32:00.359Z", "token":
+  "59b8c227-4932-4ad1-b0b9-a0b700fac691", "company": "b0356f29-6b69-469b-9afb-50ec9903ebc4",
+    "expiry": "2019-08-02T09:37:00.356Z"}}, {"model":
+"service_area.accesstoken", "pk": 5, "fields":
+{"is_deleted": false, "created_at": "2018-09-06T09:42:51.661Z",
+  "modified_at": "2019-08-02T09:42:51.661Z",
+  "token": "59dadd47-8288-4bbb-b58d-95d54d153b0b",
+  "company": "b0356f29-6b69-469b-9afb-50ec9903ebc4", "expiry": "2019-08-02T09:47:51.659Z"}},
+  {"model": "service_area.accesstoken", "pk": 6, "fields":
+  {"is_deleted": false, "created_at": "2019-08-02T10:30:35.383Z",
+    "modified_at": "2019-08-02T10:30:35.383Z", "token": "28844bdd-5c05-4c09-b074-6ec154ccc8b8",
+    "company": "b0356f29-6b69-469b-9afb-50ec9903ebc4",
+    "expiry": "2019-08-02T10:35:35.381Z"}},
+  {"model": "service_area.accesstoken", "pk": 7,
+    "fields": {"is_deleted": false, "created_at": "2018-09-06T10:47:13.698Z",
+      "modified_at": "2019-08-02T10:47:13.698Z", "token":
+      "7f65e450-9634-4553-85e3-bf880a4f4322", "company": "ed9a655d-585e-4831-b30a-f851fc25d9da",
+      "expiry": "2019-08-02T10:52:13.696Z"}},
+  {"model": "service_area.accesstoken", "pk": 8,
+    "fields": {"is_deleted": false, "created_at": "2019-08-02T10:53:36.259Z",
+      "modified_at": "2019-08-02T10:53:36.259Z",
+      "token": "db3d984f-111b-4998-95b7-230f2d479c67",
+      "company": "ed9a655d-585e-4831-b30a-f851fc25d9da",
+      "expiry": "2019-08-02T10:58:36.257Z"}},
+  {"model": "service_area.accesstoken", "pk": 9,
+    "fields": {"is_deleted": false, "created_at":
+    "2019-08-02T10:58:49.901Z",
+      "modified_at": "2019-08-02T10:58:49.901Z",
+      "token": "5a1c0304-976f-4e58-adca-c3a692de2fdb",
+      "company": "ed9a655d-585e-4831-b30a-f851fc25d9da",
+      "expiry": "2019-08-02T11:03:49.899Z"}},
+  {"model": "service_area.accesstoken", "pk": 10,
+    "fields": {"is_deleted": false, "created_at":
+    "2019-02-02T10:58:50.817Z", "modified_at": "2018-09-06T11:03:11.177Z",
+      "token": "6d9026c1-1141-4ae7-91de-dcc17421cbf2",
+      "company": "ed9a655d-585e-4831-b30a-f851fc25d9da",
+      "expiry": "2018-09-06T11:13:50.816Z"}}, {"model":
+"auth.permission", "pk": 1, "fields": {"name": "Can add log entry",
+  "content_type": 1, "codename": "add_logentry"
+  }}, {"model": "auth.permission", "pk": 2, "fields":
+{"name": "Can change log entry", "content_type": 1, "codename":
+"change_logentry"}}, {"model": "auth.permission", "pk": 3,
+  "fields": {"name": "Can delete log entry", "content_type":
+  1, "codename": "delete_logentry"}}, {"model": "auth.permission",
+  "pk": 4, "fields":
+  {"name": "Can view log entry", "content_type":
+  1, "codename": "view_logentry"}},
+  {"model": "auth.permission", "pk": 5,
+  "fields": {"name": "Can add permission", "content_type": 2, "codename":
+  "add_permission"}},
+  {"model": "auth.permission", "pk": 6, "fields": {"name":
+  "Can change permission", "content_type": 2,
+    "codename": "change_permission"}},
+  {"model": "auth.permission", "pk": 7, "fields":
+{"name": "Can delete permission", "content_type":
+2, "codename": "delete_permission"}},
+  {"model": "auth.permission", "pk": 8, "fields":
+  {"name": "Can view permission", "content_type": 2,
+    "codename": "view_permission"}}, {"model":
+"auth.permission", "pk": 9, "fields": {"name": "Can add group","content_type": 3,
+  "codename": "add_group"}},
+  {"model": "auth.permission", "pk": 10, "fields":
+{"name": "Can change group", "content_type": 3, "codename":
+"change_group"}}, {"model": "auth.permission",
+  "pk": 11, "fields": {"name": "Can delete group", "content_type":
+  3, "codename": "delete_group"}}, {"model": "auth.permission",
+  "pk": 12, "fields": {"name": "Can view group", "content_type":
+  3, "codename": "view_group"}},
+  {"model": "auth.permission", "pk": 13, "fields":
+  {"name": "Can add user", "content_type": 4,
+    "codename": "add_user"}}, {"model": "auth.permission",
+  "pk": 14, "fields": {"name": "Can change user",
+  "content_type": 4, "codename": "change_user"}}, {"model":
+"auth.permission", "pk": 15, "fields": {"name": "Can delete user",
+  "content_type": 4, "codename": "delete_user"}},
+  {"model": "auth.permission", "pk": 16, "fields":
+  {"name": "Can view user",
+  "content_type": 4, "codename": "view_user"}},
+  {"model": "auth.permission", "pk": 17, "fields":
+  {"name": "Can add content type",
+  "content_type": 5, "codename": "add_contenttype"}},
+  {"model": "auth.permission", "pk": 18, "fields": {"name":
+"Can change content type", "content_type": 5, "codename":
+  "change_contenttype"}}, {"model": "auth.permission",
+  "pk": 19, "fields": {"name": "Can delete content type",
+    "content_type": 5, "codename": "delete_contenttype"}},
+  {"model": "auth.permission", "pk": 20, "fields":
+  {"name": "Can view content type", "content_type": 5, "codename": "view_contenttype"
+  }}, {"model": "auth.permission", "pk": 21, "fields":
+{"name": "Can add session", "content_type": 6, "codename":
+"add_session"}}, {"model": "auth.permission", "pk": 22, "fields":
+{"name": "Can change session", "content_type": 6,
+  "codename": "change_session"}},
+  {"model": "auth.permission", "pk": 23, "fields":
+  {"name": "Can delete session",
+  "content_type": 6, "codename": "delete_session"}},
+  {"model": "auth.permission", "pk": 24, "fields": {"name":
+"Can view session", "content_type": 6, "codename": "view_session"}},
+  {"model": "auth.permission", "pk": 25,
+  "fields": {"name": "Can add access token", "content_type": 7, "codename": "add_accesstoken"}},
+  {"model": "auth.permission", "pk": 26, "fields":
+  {"name": "Can change access token", "content_type": 7, "codename": "change_accesstoken"}},
+  {"model": "auth.permission", "pk": 27, "fields":
+  {"name": "Can delete access token", "content_type": 7, "codename": "delete_accesstoken"}},
+  {"model": "auth.permission", "pk": 28, "fields":
+  {"name": "Can view access token", "content_type": 7, "codename": "view_accesstoken"}},
+  {"model": "auth.permission", "pk": 29, "fields":
+  {"name": "Can add company", "content_type": 8, "codename": "add_company"}},
+  {"model": "auth.permission", "pk": 30, "fields":
+{"name": "Can change company", "content_type": 8, "codename": "change_company"}},
+  {"model": "auth.permission", "pk": 31, "fields":
+  {"name": "Can delete company", "content_type": 8, "codename": "delete_company"}},
+  {"model": "auth.permission", "pk": 32, "fields":
+  {"name": "Can view company", "content_type": 8, "codename": "view_company"}},
+  {"model": "auth.permission", "pk": 33, "fields":
+  {"name": "Can add service area", "content_type": 9, "codename": "add_servicearea"}},
+  {"model": "auth.permission", "pk": 34, "fields":
+  {"name": "Can change service area", "content_type": 9, "codename": "change_servicearea"}},
+  {"model": "auth.permission", "pk": 35, "fields":
+  {"name": "Can delete service area", "content_type": 9, "codename": "delete_servicearea"}},
+  {"model": "auth.permission", "pk": 36, "fields":
+  {"name": "Can view service area", "content_type": 9, "codename": "view_servicearea"}}]
