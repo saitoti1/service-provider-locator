@@ -2,7 +2,7 @@ Django==2.1
 djangorestframework==3.8.2
 passlib==1.7.1
 psycopg2==2.7.5
-PyYAML==3.13
+PyYAML==5.4
 Shapely==1.6.4.post2
 django-redis==4.9.0
 gunicorn==19.9.0
